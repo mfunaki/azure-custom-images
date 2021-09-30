@@ -34,7 +34,7 @@ jobs:
             git config user.name $GITHUB_USERNAME
       - add_ssh_keys:
           fingerprints:
-            - $GITHUB_FINGERPRINT
+            - "$GITHUB_FINGERPRINT"
       - run:
           name: Azure Container Registry にイメージをビルドするタスク
           command: npm run pushtobuild
